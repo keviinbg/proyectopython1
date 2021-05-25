@@ -1,0 +1,93 @@
+try:
+    list = ['laura','miguel','oscar','luis','daniel'] #lista de los estudiantes
+    preguntaagregar=str(input("quiere agregar un estudiante?: ")) 
+    if preguntaagregar=="si":
+        agregarest=str(input("añadir estudiante: "))
+        list.append(agregarest)
+    elif preguntaagregar == "no":
+        print("okey!")
+    print("Esta es la lista de estudiantes:")
+    for mostrar in list:
+        print(mostrar)
+    estudiante = str(input("escriba el nombre estudiante: "))
+    if estudiante in list:
+        print("Existe el estudiante!")
+        pregunta=str(input("¿Agregar notas? "))
+        if pregunta == "si":
+            print("Las notas son de 1 a 5")
+            nota1=float(input("¿Cual es la nota 1?: "))
+            nota2=float(input("¿Cual es la nota 2?: "))
+            nota3=float(input("¿Cual es la nota 3?: "))
+            if nota1 > 5 or nota2 > 5 or nota3 > 5:
+                print("son mayoresa 5!")
+            else:
+                notafinal = (nota1 + nota2 + nota3)/3
+                x=round(notafinal,3)
+                print("la nota final es: ", x)
+                print("La nota final de ", estudiante, " es ", x)
+                if x <= 2:
+                    print("muy poco esfuerzo")
+                elif x > 2 and x <=3:
+                    print("poco esfuerzo")
+                elif x >3 and x <=4:
+                    print("esfuerzo medio")
+                elif x >4 and x <5:
+                    print("buen esfuerzo")
+                elif x == 5:
+                    print("gran esfuerzo")
+
+        elif pregunta == "no":
+            print ("okey")
+        else:
+            print("reinicia")
+
+    else: 
+        print("NO existe el estudiante")
+except:
+    print("no existe eso")try:
+    list = ['laura','miguel','oscar','luis','daniel'] #lista de los estudiantes
+    preguntaagregar=str(input("quiere agregar un estudiante?: ")) 
+    if preguntaagregar=="si":
+        agregarest=str(input("añadir estudiante: "))
+        list.append(agregarest)
+    elif preguntaagregar == "no":
+        print("okey!")
+    print("Esta es la lista de estudiantes:")
+    for mostrar in list:
+        print(mostrar)
+    estudiante = str(input("escriba el nombre estudiante: "))
+    if estudiante in list:
+        print("Existe el estudiante!")
+        pregunta=str(input("¿Agregar notas? "))
+        if pregunta == "si":
+            print("Las notas son de 1 a 5")
+            nota1=float(input("¿Cual es la nota 1?: "))
+            nota2=float(input("¿Cual es la nota 2?: "))
+            nota3=float(input("¿Cual es la nota 3?: "))
+            if nota1 > 5 or nota2 > 5 or nota3 > 5:
+                print("son mayoresa 5!")
+            else:
+                notafinal = (nota1 + nota2 + nota3)/3
+                x=round(notafinal,3)
+                print("la nota final es: ", x)
+                print("La nota final de ", estudiante, " es ", x)
+                if x <= 2:
+                    print("muy poco esfuerzo")
+                elif x > 2 and x <=3:
+                    print("poco esfuerzo")
+                elif x >3 and x <=4:
+                    print("esfuerzo medio")
+                elif x >4 and x <5:
+                    print("buen esfuerzo")
+                elif x == 5:
+                    print("gran esfuerzo")
+
+        elif pregunta == "no":
+            print ("okey")
+        else:
+            print("reinicia")
+
+    else: 
+        print("NO existe el estudiante")
+except:
+    print("no existe eso")
